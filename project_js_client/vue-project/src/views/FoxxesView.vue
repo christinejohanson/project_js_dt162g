@@ -1,0 +1,64 @@
+<template>
+  <div class="container-md">
+    <h2>Alla foxxarna</h2>
+    <Foxxes
+      @deleteFoxx="deleteFoxx(foxxes._id)"
+      v-for="foxxes in foxxes"
+      :foxxes="foxxes"
+      :key="foxxes.id"
+    />
+
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Foxxes from "../components/Foxxes.vue";
+import Footer from "../components/Footer.vue";
+
+export default {
+  data() {
+    return {
+      foxxes: [],
+    };
+  },
+  components: {
+    Foxxes,
+    Footer,
+  },
+
+  methods: {
+    //hämta alla foxxar
+    async getFoxxes() {
+      const res = await fetch("http://localhost:3000/foxxes", {
+        method: "GET",
+        headers: {
+          "Content-type": "application/json",
+        },
+      });
+
+      const data = await res.json();
+      this.foxxes = data;
+    },
+
+    //radera foxx
+    async deleteFoxx(id) {
+      const resp = await fetch("http://localhost:3000/foxxes/" + id, {
+        //gör ett deleteanrop
+        method: "DELETE",
+        //objekt i json format
+        headers: {
+          Accept: "application/json",
+          "Content-type": "application/json",
+        },
+      });
+      const data = await resp.json();
+      this.getFoxxes();
+    },
+  },
+  //metod som körs när komponent laddats in.
+  mounted() {
+    this.getFoxxes();
+  },
+};
+</script>
