@@ -1,6 +1,6 @@
 <template>
   <div class="container-md">
-    <h2>Alla foxxarna</h2>
+    <h3>Alla foxxarna</h3>
     <Foxxes
       @deleteFoxx="deleteFoxx(foxxes._id)"
       v-for="foxxes in foxxes"
@@ -62,3 +62,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h3 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+</style>

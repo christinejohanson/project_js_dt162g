@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container-md">
-      <h1>Redigera foxxarna</h1>
+      <h3>Redigera vald foxx</h3>
       <EditFoxx />
     </div>
     <Footer />
@@ -41,3 +41,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h3 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+</style>

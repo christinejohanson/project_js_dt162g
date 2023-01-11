@@ -51,6 +51,10 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  background-color: rgb(225, 219, 220);
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
@@ -82,20 +86,6 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    background-color: rgb(225, 219, 220);
-    text-align: left;
-    font-size: 1rem;
-    padding: 1rem;
-    margin-top: 1rem;
   }
 }
 </style>

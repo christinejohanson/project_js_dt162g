@@ -1,7 +1,9 @@
 <template>
   <article>
-    <h1 class="display-6">PROJEKT JAVASCRIPTBASERAD WEBBUTVECKLING</h1>
-    <p>CHRISTINE JOHANSON CHJO2104</p>
+    <p>
+      PROJEKT JAVASCRIPTBASERAD WEBBUTVECKLING<br />
+      CHRISTINE JOHANSON CHJO2104
+    </p>
   </article>
 </template>
 

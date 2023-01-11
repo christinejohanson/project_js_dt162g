@@ -1,6 +1,6 @@
 <template>
   <div class="container-md">
-    <h1>Här kan du lägga till en ny foxx du tycker passar in</h1>
+    <h3>Lägg till en ny foxx du tycker saknas i listan</h3>
     <AddFoxx />
 
     <Footer />
@@ -18,3 +18,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h3 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+</style>
