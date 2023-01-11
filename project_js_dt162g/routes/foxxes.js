@@ -47,8 +47,7 @@ db.once('open', function (callback) { // Add the listener for db events
         });
     });  
     
-    /* GET FOX W UNIQUE ID */
-    
+    /* GET FOX W UNIQUE ID */   
       router.get('/:id', function (req, res, next) {
         var id = req.params.id;
         
@@ -75,7 +74,6 @@ db.once('open', function (callback) { // Add the listener for db events
         movies: req.body.movies
 
     });	
-    console.log("test" + req.body.name);
 
     // Save new user to db
     foxxesNew.save(function(err) {
@@ -102,8 +100,6 @@ db.once('open', function (callback) { // Add the listener for db events
         };
         //update fox id in db
         Foxxes.findByIdAndUpdate(id, foxxesUpdate, function (err) {
-            /*if (err) return handleError(err);
-            console.log("nu blev det nå fel från uppdatering");*/
             if (err) {
                 res.send(err);
             }
@@ -111,11 +107,9 @@ db.once('open', function (callback) { // Add the listener for db events
                 res.json({ message: "Foxxen är nu uppdaterad" });
             }
         });
-
     });
        
     /* DELETE FOX W UNIQUE ID */
-    
     router.delete('/:id', function(req, res, next) {
     var id = req.params.id;
     
@@ -132,9 +126,7 @@ db.once('open', function (callback) { // Add the listener for db events
         res.contentType('application/json');
         res.send(jsonObj);
     });
-    });
-
-    
+    });   
 
 });
 module.exports = router;
