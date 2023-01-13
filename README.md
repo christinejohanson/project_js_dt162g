@@ -6,6 +6,8 @@ Webbapplikationen läser ut data om foxxar med information om dessa. Den är upp
 
 ## DEL 1 REST-API ##
 
+project_js_dt162g
+
 Inställning för databaskoppling och skapande av databasschema i fil project_js_dt162g/foxxes.js
 
 API´et finns ej publicerat, utan körs lokalt. 
@@ -22,6 +24,8 @@ Foxxes
 
 
 ## DEL 2 WEBBAPPLIKATION ##
+
+project_js_client
 
 Webbapplikation körs lokalt på server. 
 
