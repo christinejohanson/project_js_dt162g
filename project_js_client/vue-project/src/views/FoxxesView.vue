@@ -1,12 +1,28 @@
 <template>
   <div class="container-md">
     <h3>Alla foxxarna</h3>
-    <Foxxes
-      @deleteFoxx="deleteFoxx(foxxes._id)"
-      v-for="foxxes in foxxes"
-      :foxxes="foxxes"
-      :key="foxxes.id"
-    />
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Namn</th>
+            <th scope="col">Födelseår</th>
+            <th scope="col">Nationalitet</th>
+            <th scope="col">Livskamrat</th>
+            <th scope="col">Filmer</th>
+            <th scope="col">Redigera</th>
+          </tr>
+        </thead>
+
+        <Foxxes
+          @deleteFoxx="deleteFoxx(foxxes._id)"
+          v-for="foxxes in foxxes"
+          :foxxes="foxxes"
+          :key="foxxes.id"
+        />
+      </table>
+    </div>
 
     <Footer />
   </div>

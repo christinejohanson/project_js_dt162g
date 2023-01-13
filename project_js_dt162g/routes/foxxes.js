@@ -53,9 +53,9 @@ db.once('open', function (callback) { // Add the listener for db events
         
         //Get user _id from db
         Foxxes.findById({"_id": id }, function (err, foxxes) {
-            //Course.findOne({ "_id": id }, function (err) {
+
             if (err) return handleError(err);
-            //använd mongoose.
+
             var jsonObj = JSON.stringify(foxxes);
             res.contentType('application/json');
             res.send(jsonObj);
@@ -74,7 +74,6 @@ db.once('open', function (callback) { // Add the listener for db events
         movies: req.body.movies
 
     });	
-
     // Save new user to db
     foxxesNew.save(function(err) {
         if(err) return console.error(err);

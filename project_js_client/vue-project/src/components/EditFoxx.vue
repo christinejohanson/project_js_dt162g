@@ -52,7 +52,7 @@
       value="Uppdatera"
     /><br /><br />
     <span class="wrong"> {{ felmess }}</span>
-    <span> {{ correctmess }}</span>
+    <span class="right"> {{ correctmess }}</span>
   </form>
 </template>
 
@@ -72,7 +72,7 @@ export default {
       foxxes: [],
     };
   },
-  emits: ["addfoxxAdded"],
+
   methods: {
     //hämta alla foxxar
     async getFoxxes() {

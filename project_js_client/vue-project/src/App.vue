@@ -57,14 +57,6 @@ nav {
   margin-top: 1rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
 nav a {
   display: inline-block;
   text-decoration: none;
@@ -79,6 +71,9 @@ nav a:hover {
 
 nav a:first-of-type {
   border: 0;
+}
+.display-2 {
+  margin-right: 10%;
 }
 
 @media (min-width: 1024px) {

@@ -68,7 +68,7 @@ export default {
       correctmess: "",
     };
   },
-  emits: ["addfoxxAdded"],
+
   methods: {
     async addFoxx() {
       //kontrollera inmatning
@@ -104,7 +104,6 @@ export default {
         this.spouse = "";
         this.movies = "";
 
-        this.$emit("addfoxxAdded");
         this.felmess = "";
         this.correctmess = "Foxxen är nu tillagd";
       } else {
