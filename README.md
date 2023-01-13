@@ -6,6 +6,8 @@ Webbapplikationen läser ut data om foxxar med information om dessa. Den är upp
 
 ## DEL 1 REST-API ##
 
+Inställning för databaskoppling och skapande av databasschema i fil project_js_dt162g/foxxes.js
+
 API´et finns ej publicerat, utan körs lokalt. 
 
 Foxxes
@@ -17,3 +19,10 @@ Foxxes
 | POST | /foxxes | lagrar ny foxx |
 | PUT | /foxxes/{id} | uppdaterar foxx med angivet ID |
 | DELETE | /foxxes/{id} | raderar foxx med angivet ID |
+
+
+## DEL 2 WEBBAPPLIKATION ##
+
+Webbapplikation körs lokalt på server. 
+
+Hämtar data från api´et, skapat med Vue som en SPA. Bootstrap används som CSS-ramverk. 
