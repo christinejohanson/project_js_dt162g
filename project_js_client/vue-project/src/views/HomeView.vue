@@ -1,5 +1,6 @@
 <template>
   <div class="container-md">
+    <img src="../assets/foxxbild.jpg" class="foxximage" />
     <div class="textcontainer">
       <h1>Projekt Javascriptbaserad Webbutveckling</h1>
       <p>
@@ -42,5 +43,11 @@ h1 {
 .textcontainer {
   width: 50%;
   margin: 0 auto;
+}
+
+.foxximage {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 </style>
